@@ -34,7 +34,7 @@ function  NavBar(){
                     </ul>
                     <ul>
                         <li>
-                            <a href="/home"><img className="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a0/Logo_Orl%C3%A9ans_Loiret_Basket_-_2014.svg/1200px-Logo_Orl%C3%A9ans_Loiret_Basket_-_2014.svg.png" alt="elite basket camps"/></a>
+                            <a href="/home"><img className="logo" src="https://www.pngplay.com/wp-content/uploads/13/Snowflake-Transparent-Image.png"/></a>
                         </li>
                     </ul>
                     <ul>
