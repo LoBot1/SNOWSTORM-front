@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+
+}    
+
+html body {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.526);
+    background-blend-mode: color;
+    background-image: url(https://i.pinimg.com/originals/58/e7/ac/58e7ace54eb4893bf71fa57f26d464e2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+h1{
+    padding: 50px;
+    color: aliceblue;
+}
+
+
+
+html body div#root div.Contain div.button{
+    display: flex;
+    justify-content: space-around;
+}
+html body div#root div.Contain div.button button{
+    --c: rgb(110, 24, 15);
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+html body div#root div.Contain div.button button div{    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+html body div#root div.Contain div.box1{
+    height: 62.5rem;
+}
+
+html body div#root div.Contain div.box2{
+    height: 60rem;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.26),rgb(0, 0, 0));
+    box-shadow: 0px -10px 1000px 200px rgb(0, 0, 0);
+}
+/* SLOGAN HOME */
+html body div#root div.Contain div.box1 div.slogan1{
+    display: flex;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+html body div#root div.Contain div.box1 div.slogan2{
+    display: flex;
+}
+html body div#root div.Contain div.box1 div.space{
+    width: 50%;
+}
+html body div#root div.Contain div.box1 div.slogan1 h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    text-decoration: underline;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.428) 40%,white 73%,rgba(255, 166, 0, 0.508) 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid rgb(71, 3, 3);
+
+}
+html body div#root div.Contain div.box1 div.slogan2 h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    text-decoration: underline;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.428) 50%,white 80%,rgba(255, 166, 0, 0.508) 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid rgb(71, 3, 3);
+} 
+html body div#root div.Contain div.box2 h2{
+    color: white;
+}
+.test{
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+}
+
+
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    z-index: -1;
+    
+}
+
+html body div#root div.Contain div.button span {
+    position: absolute;
+    width: 25%;
+    height: 120%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 100%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+html body div#root div.Contain div.button button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+}
+
+html body div#root div.Contain div.button button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+html body div#root div.Contain div.button button span:nth-child(1) {
+    --n: 1;
+}
+
+html body div#root div.Contain div.button button span:nth-child(2) {
+    --n: 2;
+}
+
+html body div#root div.Contain div.button button span:nth-child(3) {
+    --n: 3;
+}
+
+html body div#root div.Contain div.button button span:nth-child(4) {
+    --n: 4;
+}
