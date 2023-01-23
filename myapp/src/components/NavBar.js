@@ -19,12 +19,17 @@ function  NavBar(){
                     </button>
                     <ul>
                         <li>
-                            <a href="/Entraineur">Entraineur</a>
+                            <a href="/Entraineur">Produit</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/Camps">Camps</a>
+                            <a href="/Camps">Personalisé</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/Contact">Contact</a>
                         </li>
                     </ul>
                     <ul>
@@ -34,7 +39,12 @@ function  NavBar(){
                     </ul>
                     <ul>
                         <li>
-                            <a href="/Shop">Boutique</a>
+                            <a href="/Shop">Support/SAV</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/Contact">FAQ</a>
                         </li>
                     </ul>
                     <ul>
