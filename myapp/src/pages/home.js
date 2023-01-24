@@ -1,5 +1,4 @@
 
-import NavBar from '../components/NavBar.js';
 
 import '../style/home.css'
 
