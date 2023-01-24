@@ -1,22 +1,14 @@
 
 import NavBar from '../components/NavBar.js';
+import Contact from '../components/Support.js';
 
 import '../style/home.css'
 
-function home() {
-    return (
+function Home() {
+    return <>
         <div className='Contain'>
             <div className='box1'>
-                <div className='sloganhome'>
-                    <div className='slogan1'>
-                        <div className='slogan'><h2>Elite Basket Camps</h2></div>
-                        <div className='space'></div>
-                    </div>
-                    <div className='slogan2'>
-                        <div className='space'></div>
-                        <div className='slogan'><h2>C'est bien plus que du sport</h2></div>
-                    </div>
-                </div>
+               
             </div>
             <div className='box2'>
                 <h2>Nos Entraineur</h2>
@@ -45,6 +37,7 @@ function home() {
                 </div>
             </div>
         </div>
-    )
+        <Contact/>
+        </>
 }
-export default home;
+export default Home;
