@@ -34,7 +34,7 @@ function  NavBar(){
                     </ul>
                     <ul>
                         <li>
-                            <a href="/home"><img className="logo" src="https://www.pngplay.com/wp-content/uploads/13/Snowflake-Transparent-Image.png"/></a>
+                            <a href="/home"><img className="logo" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067408658713018458/Capture_1.png"/></a>
                         </li>
                     </ul>
                     <ul>

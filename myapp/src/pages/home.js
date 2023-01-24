@@ -11,7 +11,7 @@ function home() {
             </div>
             <div className='box2'>
                 <h2>Nos Entraineur</h2>
-                <img className="test" src="https://thumbs.dreamstime.com/b/jour-de-terre-d-environnement-dans-les-mains-des-arbres-cultivant-jeunes-plantes-bokeh-verdissent-la-main-femelle-fond-tenant-l-130247647.jpg"></img>
+                <img className="test" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067176955578957984/Capture.png"></img>
             </div>
             
             <div className='box2'>
