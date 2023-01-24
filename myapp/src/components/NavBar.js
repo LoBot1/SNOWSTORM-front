@@ -19,27 +19,37 @@ function  NavBar(){
                     </button>
                     <ul>
                         <li>
-                            <a href="/Entraineur">Entraineur</a>
+                            <a href="/Entraineur">Personalisé</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/Camps">Camps</a>
+                            <a href="/Camps">Contact</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/home"><img className="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a0/Logo_Orl%C3%A9ans_Loiret_Basket_-_2014.svg/1200px-Logo_Orl%C3%A9ans_Loiret_Basket_-_2014.svg.png" alt="elite basket camps"/></a>
+                            <a href="/product">Produits</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/Shop">Boutique</a>
+                            <a href="/home"><img className="logo" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067408658713018458/Capture_1.png" alt="elite basket camps"/></a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/Contact">Contact</a>
+                            <a href="/support">Support/SAV</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/galerie">Galerie</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/faq">FAQ</a>
                         </li>
                     </ul>
                 </nav>
