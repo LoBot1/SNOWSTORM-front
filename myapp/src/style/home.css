@@ -16,8 +16,9 @@ html body {
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.526);
     background-blend-mode: color;
-    background-image: url(https://i.pinimg.com/originals/58/e7/ac/58e7ace54eb4893bf71fa57f26d464e2.jpg);
+    background-image: url(https://pic.clubic.com/v1/images/1977966/raw);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 

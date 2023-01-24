@@ -32,14 +32,10 @@ function  NavBar(){
                             <a href="/product">Produits</a>
                         </li>
                     </ul>
+                    
                     <ul>
                         <li>
-                            <a href="/home"><img className="logo" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067408658713018458/Capture_1.png" alt="elite basket camps"/></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="/support">Support/SAV</a>
+                        <a href="/home"><img className="logo" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067408658713018458/Capture_1.png" alt="elite basket camps"/></a>
                         </li>
                     </ul>
                     <ul>
@@ -47,6 +43,13 @@ function  NavBar(){
                             <a href="/galerie">Galerie</a>
                         </li>
                     </ul>
+                    
+                    <ul>
+                        <li>
+                            <a href="/support">Support/SAV</a>
+                        </li>
+                    </ul>
+                    
                     <ul>
                         <li>
                             <a href="/faq">FAQ</a>
