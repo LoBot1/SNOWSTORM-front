@@ -145,3 +145,40 @@ html body div#root  header nav button.nav-btn.nav-close-btn svg{
         font-size: 1.5rem;
     }
 }
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    button.modal-toggle {
+        cursor: pointer;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        text-decoration: none;
+        margin: 0 2rem;
+        padding: 10px;
+        transition: 1s;
+        position: relative;
+        z-index: 10;
+        font-weight: bold;
+        background: linear-gradient(0deg, rgb(239, 239, 239), rgb(248, 248, 248)) no-repeat right bottom / 0 var(--bg-h);
+        transition: background-size 0.35s;
+        --bg-h: 100%;
+        padding-bottom: 2px;
+        --bg-h: 2px;
+        padding-top: 0px;
+    }
+    html body div#root  header div nav button.modal-toggle{
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 0.8px;
+        font-size: 20px;
+    }
+    button.modal-toggle:where(:hover, :focus-visible)  {
+        background-size: 100% var(--bg-h);
+        background-position-x: left;
+        position: relative;
+        z-index: 10;
+    }

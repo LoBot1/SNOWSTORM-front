@@ -1,6 +1,6 @@
 
 import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Product from "./pages/Product";

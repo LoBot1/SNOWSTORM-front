@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import useModal from "./useModale";
+import Modal1 from "./Modal";
 import '../style/main.css'
 // npm install react-icons
 function  NavBar(){
@@ -9,7 +11,7 @@ function  NavBar(){
         navRef.current.classList.toggle("responsive_nav");
         
     }
-    
+    const { isShowing, toggle } = useModal();
     return( 
         <header>
             <div>
@@ -52,7 +54,17 @@ function  NavBar(){
                     
                     <ul>
                         <li>
-                            <a href="/faq">FAQ</a>
+                        <>
+                            <div className="App">
+                                <button className="modal-toggle" onClick={toggle}>
+                                Nous Contacter
+                                </button>
+
+                                <Modal1
+                                isShowing={isShowing} hide={toggle} />
+                            </div>
+
+                            </>
                         </li>
                     </ul>
                 </nav>
