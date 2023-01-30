@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LoBot1/SNOWSTORM-front#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "create-react-app": "^5.0.1"
   }
 }

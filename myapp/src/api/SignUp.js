@@ -1,5 +1,5 @@
 
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 
 function hashPassword(dataPassword) {
     const password = bcrypt.hash(dataPassword, 10)

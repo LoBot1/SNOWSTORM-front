@@ -9,6 +9,9 @@ import Faq from "./pages/faq";
 import Panel from "./pages/panel"
 
 
+import Success from "./pages/Success"
+import Cancel from "./pages/Cancel"
+
 
 //App.js
 function App(props){
@@ -37,9 +40,6 @@ function App(props){
               break
             case "/panel":
               components = <Panel/>
-              case "/payment":
-                  components = <StripePayment/>
-                  break
                   case "/success":
                     components = <Success/>
                     break
