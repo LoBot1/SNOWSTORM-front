@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Product from "./pages/Product";
 import Support from "./components/Support";
+import Faq from "./pages/faq";
+import Panel from "./pages/panel"
 
 
 
@@ -30,6 +32,11 @@ function App(props){
             case "/support":
               components = <Support/>
               break
+            case "/faq":
+              components = <Faq/>
+              break
+            case "/panel":
+              components = <Panel/>
         
 
   }

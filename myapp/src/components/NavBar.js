@@ -42,7 +42,7 @@ function  NavBar(){
                     </ul>
                     <ul>
                         <li>
-                            <a href="/galerie">Galerie</a>
+                            <a href="/faq">Question</a>
                         </li>
                     </ul>
                     

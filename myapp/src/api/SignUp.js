@@ -8,7 +8,7 @@ export const SignUpPost = (data) => {
     // const password = dataPassword.current.value
     // const hashedPassword = bcrypt.hashSync(password, '$2a$10$CwTycUXWue0Thq9StjUM0u') 
     fetch('http://localhost:4444/user/post',{
-        method: 'POST', 
+        method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({firstname:data.firstname,name:data.name,email:data.email,adress:data.adress,password:data.password})
     })

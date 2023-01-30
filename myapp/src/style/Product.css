@@ -1,0 +1,29 @@
+.main {
+    background-size: contain;
+    background-blend-mode: color;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.card-list{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content:center;
+    column-gap: 50em;
+}
+.cardWithform-On{
+    display:flex;
+    flex-direction:column;
+    background-repeat: no-repeat;
+    margin: 10em 0px 0px 0px;
+    width: 400px;
+    height: 600px;
+}
+.card-list.card.image{
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+

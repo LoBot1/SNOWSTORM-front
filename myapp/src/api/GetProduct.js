@@ -1,6 +1,6 @@
 export const getAll = async () => {
     const response = await fetch(
-        ' http://localhost:4444/Produit/list', {
+        'http://localhost:4444/product/getAll', {
             method: 'GET', 
             headers: {
                 'Accept': 'application/json', 
@@ -8,6 +8,7 @@ export const getAll = async () => {
             }
         }
     )
-    const Produit = await response.json()
-    return Produit
+    const produit = await response.json()
+    console.log(produit)
+    return produit
 }
