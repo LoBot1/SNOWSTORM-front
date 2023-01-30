@@ -37,6 +37,15 @@ function App(props){
               break
             case "/panel":
               components = <Panel/>
+              case "/payment":
+                  components = <StripePayment/>
+                  break
+                  case "/success":
+                    components = <Success/>
+                    break
+                    case "/cancel":
+                      components = <Cancel/>
+                      break
         
 
   }
