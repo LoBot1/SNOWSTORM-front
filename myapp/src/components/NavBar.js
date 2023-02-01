@@ -2,14 +2,14 @@ import { useRef, useState } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import useModal from "./useModale";
+import Log from "./Log"
 import Modal1 from "./Modal";
 import '../style/main.css'
 // npm install react-icons
-function  NavBar(){
+function NavBar(){
     const navRef = useRef();
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
-        
     }
     const { isShowing, toggle } = useModal();
     return( 
@@ -49,6 +49,12 @@ function  NavBar(){
                     <ul>
                         <li>
                             <a href="/support">Support/SAV</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <Log/>
                         </li>
                     </ul>
                     

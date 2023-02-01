@@ -12,9 +12,9 @@ export const Loger = async (data) => {
             }
         }
     )
-    const user = await response.json()
-    console.log(user)
-    return user
+    // const user = await response.json()
+    // console.log(user)
+    // return user
 }
 
 
