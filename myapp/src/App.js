@@ -30,22 +30,22 @@ function App(props){
             components = <SignUp/>
             break
             case "/product":
-            components = <Product/>
-            break
-            case "/support":
-              components = <Support/>
+              components = <Product/>
               break
-            case "/faq":
-              components = <Faq/>
-              break
-            case "/panel":
-              components = <Panel/>
-                  case "/success":
-                    components = <Success/>
-                    break
-                    case "/cancel":
-                      components = <Cancel/>
+              case "/support":
+                components = <Support/>
+                break
+                case "/faq":
+                  components = <Faq/>
+                  break
+                  case "/panel":
+                    components = <Panel/>
+                    case "/success":
+                      components = <Success/>
                       break
+                      case "/cancel":
+                        components = <Cancel/>
+                        break
         
 
   }

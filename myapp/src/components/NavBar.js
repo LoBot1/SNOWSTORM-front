@@ -32,16 +32,6 @@ function NavBar() {
                     </div>
                     <ul>
                         <li>
-                            <a href="/Entraineur">Personalisé</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="/Camps">Contact</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
                             <a href="/product">Produits</a>
                         </li>
                     </ul>
@@ -61,7 +51,7 @@ function NavBar() {
                             <>
                                 <div className="App">
                                     <button className="modal-toggle" onClick={toggle}>
-                                        Help
+                                        Contact
                                     </button>
 
                                     <Modal1
@@ -69,6 +59,11 @@ function NavBar() {
                                 </div>
 
                             </>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/faq">FAQ</a>
                         </li>
                     </ul>
                     <ul>
