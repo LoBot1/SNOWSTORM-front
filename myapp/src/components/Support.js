@@ -7,6 +7,7 @@ function Support() {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
+        console.log(data)
         SupportPost(data);
     }
 
@@ -16,9 +17,9 @@ function Support() {
         <label>Objet</label> <br></br>
         <input size="lg" type="text" placeholder="Objet" {...register("object", {required: true})} /> <br></br>
         <label>Texte</label> <br></br>
-        <input size="lg" type="Texte" placeholder="Texte" {...register("text", {required: true})} /> <br></br>
+        <textarea  type="text" placeholder="Texte" {...register("text", {required: true})} />
         <label>Image</label> <br></br>
-        <input size="lg" type="Texte" placeholder="Image" {...register("img", {required: true})} /> <br></br>
+        <input size="lg" type="text" placeholder="Image" {...register("img", {required: true})} /> <br></br>
         <input type="submit" />
     </form>
 }

@@ -3,7 +3,7 @@ import {FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import useModal from "./useModale";
 import Log from "./Log"
-import Modal1 from "./Modal";
+import Modal1 from "./Modal1";
 import '../style/main.css'
 // npm install react-icons
 function NavBar(){
@@ -48,7 +48,7 @@ function NavBar(){
                     
                     <ul>
                         <li>
-                            <a href="/support">Support/SAV</a>
+                            <a href="/support">SAV/SUPPORT</a>
                         </li>
                     </ul>
 
@@ -60,17 +60,11 @@ function NavBar(){
                     
                     <ul>
                         <li>
-                        <>
-                            <div className="App">
-                                <button className="modal-toggle" onClick={toggle}>
-                                Nous Contacter
-                                </button>
-
-                                <Modal1
-                                isShowing={isShowing} hide={toggle} />
-                            </div>
-
-                            </>
+                            <button className="modal-toggle" onClick={toggle}>
+                            Nous Contacter
+                            </button>
+                            <Modal1
+                            isShowing={isShowing} hide={toggle} />
                         </li>
                     </ul>
                 </nav>

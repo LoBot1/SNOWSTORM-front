@@ -1,6 +1,6 @@
 export const getAll = async () => {
     const response = await fetch(
-        'http://localhost:4444/Produit/list', {
+        'http://localhost:4444/product/getAll', {
             method: 'GET', 
             headers: {
                 'Accept': 'application/json', 
