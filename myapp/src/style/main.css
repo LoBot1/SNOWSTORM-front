@@ -10,7 +10,10 @@
     --secondaryColor : red;
     --textColor:rgb(163, 163, 163);
 }
-
+html body div#root header div.Navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
 header{
     height: 80px;
     width: 100%;

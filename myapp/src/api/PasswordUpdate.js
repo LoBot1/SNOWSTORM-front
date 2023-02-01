@@ -9,9 +9,6 @@ export const PasswordUpdate = async (data) => {
             }
         }
     )
-    // const user = await response.json()
-    // console.log(user)
-    // return user
 }
 
 

@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     align-items:flex-start;
     justify-content:center;
-    column-gap: 50em;
+    
 }
 .cardWithform-On{
     display:flex;
@@ -20,10 +20,46 @@
     width: 400px;
     height: 600px;
 }
-.card-list.card.image{
-    width: 100% !important;
-    height: auto !important;
+.cardWithform-Off .img{
+    background-color: black;
+    background-blend-mode: color;
 }
 
 
+#button{
+    position:relative;
+    bottom:180px;
+    z-index:2;
+    right: 395px;
 
+      background: none;
+  border-radius: 15px;
+  color:  #87D9FF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  color: black;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#button:hover {
+    border: solid 2px #000000;
+    color: rgba(255, 255, 255, );
+    transition: 0.3s;
+    background-color: rgba(0,0,0,0.8);
+}
+.img:hover{
+    
+    background-color: black;
+    background-blend-mode: color;
+}

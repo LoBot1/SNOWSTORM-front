@@ -9,9 +9,13 @@ export const Loger = async (data) => {
             }
         }
     )
-    // const user = await response.json()
-    // console.log(user)
-    // return user
+    const result = await response.json()
+    if (result == true || result == "true") {
+        console.log("error")
+    }
+    else{
+        localStorage.setItem("user", result);
+    }
 }
 
 

@@ -1,24 +1,35 @@
 import { useRef, useState } from "react";
-import {FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { BsFillBasket2Fill, } from "react-icons/bs";
+import { CgProfile} from "react-icons/cg";
+
+
 import { Link } from "react-router-dom";
 import useModal from "./useModale";
-import Log from "./Log"
 import Modal1 from "./Modal1";
 import '../style/main.css'
 // npm install react-icons
-function NavBar(){
+function NavBar() {
     const navRef = useRef();
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
+
     }
     const { isShowing, toggle } = useModal();
-    return( 
+    return (
         <header>
-            <div>
+            <div className="Navbar">
                 <nav ref={navRef}>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                        <FaTimes/>
+                        <FaTimes />
                     </button>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="/home"><img className="logo" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067408658713018458/Capture_1.png" alt="elite basket camps" /></a>
+                            </li>
+                        </ul>
+                    </div>
                     <ul>
                         <li>
                             <a href="/Entraineur">Personalisé</a>
@@ -34,49 +45,53 @@ function NavBar(){
                             <a href="/product">Produits</a>
                         </li>
                     </ul>
-                    
                     <ul>
                         <li>
-                        <a href="/home"><img className="logo" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067408658713018458/Capture_1.png" alt="elite basket camps"/></a>
+                            <a href="/galerie">Galerie</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/faq">Question</a>
-                        </li>
-                    </ul>
-                    
-                    <ul>
-                        <li>
-                            <a href="/support">SAV/SUPPORT</a>
+                            <a href="/support">Support/SAV</a>
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            <Log/>
+                            <>
+                                <div className="App">
+                                    <button className="modal-toggle" onClick={toggle}>
+                                        Help
+                                    </button>
+
+                                    <Modal1
+                                        isShowing={isShowing} hide={toggle} />
+                                </div>
+
+                            </>
                         </li>
                     </ul>
-                    
                     <ul>
                         <li>
-                            <button className="modal-toggle" onClick={toggle}>
-                            Nous Contacter
-                            </button>
-                            <Modal1
-                            isShowing={isShowing} hide={toggle} />
+                            <a href="/Basket"> <BsFillBasket2Fill /></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/Basket"> <CgProfile /></a>
                         </li>
                     </ul>
                 </nav>
+
                 <button className="nav-btn" onClick={showNavbar}>
-                    <FaBars/>
+                    <FaBars />
                 </button>
             </div>
         </header>
 
 
-     );
+    );
 }
 
 
-export default NavBar ; 
+export default NavBar;
