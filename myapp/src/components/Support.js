@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import {SupportPost} from '../api/SupportPost.js';
+import "../style/support.css"
 
 
 function Support() {

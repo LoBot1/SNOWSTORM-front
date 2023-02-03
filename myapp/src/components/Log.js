@@ -1,9 +1,11 @@
+import { CgProfile} from "react-icons/cg";
+
 function Log() {
-    const isLoggedIn = localStorage.getItem('profile')
+    const isLoggedIn = localStorage.getItem('profil')
     if (isLoggedIn) {
-      return <button onClick={localStorage.removeItem("user")}>Logout</button>
+      return <a href="/signup"><CgProfile/></a>
     }
-    return <a href="/Login">Se connecter</a>
+    return <a href="/signup"><CgProfile/></a>
   }
 
 export default Log ; 

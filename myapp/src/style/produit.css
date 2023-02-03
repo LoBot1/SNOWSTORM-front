@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+html body div#root div.pokemon-list{
+    padding: 5%;
+}
+
+html body div#root div.pokemon-list div.flex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 0px;
+    margin: 0px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+html body div#root div.bloc-pokemon div.card div.container{
+    position: relative;
+    
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+}
+html body div#root div.bloc-pokemon div.card div.container img{
+    width: 100%;
+
+}
+html body div#root .card .container:hover .overlay {
+   opacity: 0.5;
+   transition: 0.3s;
+}
+.overlay .desc{
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+html body div#root div.bloc-pokemon{
+    width: 100%;
+}
+
+button.nav-btn.nav-close-btn ul li a{
+    padding: 0px;
+    margin: 0px;
+    background-color: none;
+}
+div.button{
+    text-align: center;
+    padding: 20%;
+}
+div.button button{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+div.desc{
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+div.button button ul li a svg{
+    height: 40px;
+    width: 40px;
+}
+@media only screen and (max-width: 1240px){
+    html body div#root div.pokemon-list div.flex{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        
+    }
+    
+}
+@media only screen and (max-width: 960px){
+    html body div#root div.pokemon-list div.flex{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
+}
+@media only screen and (max-width: 640px){
+    html body div#root div.pokemon-list div.flex{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        
+    }
+    
+}

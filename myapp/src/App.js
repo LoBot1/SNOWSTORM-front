@@ -7,10 +7,9 @@ import Product from "./pages/Product";
 import Support from "./components/Support";
 import Faq from "./pages/faq";
 import Panel from "./pages/panel"
-
-
-import Success from "./pages/Success"
-import Cancel from "./pages/Cancel"
+import CookieBanner from 'react-cookie-banner';
+import Item from "./components/Item"
+import Basket from "./pages/Basket";
 
 
 //App.js
@@ -40,12 +39,15 @@ function App(props){
                   break
                   case "/panel":
                     components = <Panel/>
-                    case "/success":
-                      components = <Success/>
+                    break
+                    case "/payment":
+                      components = <Item/>
                       break
-                      case "/cancel":
-                        components = <Cancel/>
+                      case "/Basket":
+                        components = <Basket/>
                         break
+                        
+
         
 
   }
@@ -53,6 +55,18 @@ function App(props){
     <>
       <NavBar/>
       {components}
+      
+ 
+    React.renderComponent(
+      <div>
+        <CookieBanner
+          message="Yes, we use cookies. If you don't like it change website, we won't miss you!"
+          onAccept={() => {}}
+          cookie="user-has-accepted-cookies" />
+      </div>,
+      document.body
+    );
+      
     </>
 
   )
@@ -60,3 +74,4 @@ function App(props){
 }
 
 export default App;
+

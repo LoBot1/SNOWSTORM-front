@@ -5,3 +5,5 @@ export const SignUpPost = (data) => {
         body: JSON.stringify({firstname:data.firstname,name:data.name,email:data.email,adress:data.adress,password:data.password})
     })
 }
+
+

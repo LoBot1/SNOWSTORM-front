@@ -1,12 +1,15 @@
 
 import NavBar from '../components/NavBar.js';
 import Contact from '../components/Support.js';
+import { useEffect, useInsertionEffect, useState } from 'react';
 
 
 import '../style/home.css'
 
 function Home() {
+
     return <>
+        
         <div className='Contain'>
             <div className='box1'>
             </div>
