@@ -10,6 +10,11 @@ import Panel from "./pages/panel"
 import CookieBanner from 'react-cookie-banner';
 import Item from "./components/Item"
 import Basket from "./pages/Basket";
+import PanelAdminUserDelete from "./pages/panelUserDelete";
+import PanelAdminProductCreate from "./pages/panelProductCreate";
+import PanelAdminProductDelete from "./pages/panelProductDelete";
+import PanelAdminUserCreate from "./pages/panelUserCreate";
+import Footer from "./components/footer/Footer";
 
 
 //App.js
@@ -46,6 +51,21 @@ function App(props){
                       case "/Basket":
                         components = <Basket/>
                         break
+                        case "/panelUserCreate":
+                          components = <PanelAdminUserCreate/>
+                          break
+                        case "/panelUserDelete":
+                          components = <PanelAdminUserDelete/>
+                          break
+                        case "/panelProductCreate":
+                          components = <PanelAdminProductCreate/>
+                          break
+                        case "/panelProductDelete":
+                          components = <PanelAdminProductDelete/>
+                          break
+                          case "/Footer":
+                          components = <Footer/>
+                          break
                         
 
         

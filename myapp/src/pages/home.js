@@ -1,46 +1,60 @@
-
+import Footer from '../components/footer/Footer.js';
 import NavBar from '../components/NavBar.js';
 import Contact from '../components/Support.js';
-import { useEffect, useInsertionEffect, useState } from 'react';
-
+import test from '../img/test.jpg';
+import Test_L80 from '../img/Test_L80.jpg';
+import phantom from '../img/phantom.jpg';
+import Carousel from 'react-bootstrap/Carousel';
 
 import '../style/home.css'
+import '../style/footer.css';
 
 function Home() {
-
     return <>
-        
-        <div className='Contain'>
-            <div className='box1'>
-            </div>
-            <div className='box2'>
-                <h2>Nos Entraineur</h2>
-                <img className="test" src="https://cdn.discordapp.com/attachments/1067015324530118716/1067176955578957984/Capture.png"></img>
-            </div>
-            
-            <div className='box2'>
-                <h2>Nos Camps</h2>
-            </div>
-            
-            <div className='box2'>
-                <h2>Boutique</h2>
-            </div>
-            <div className='button'>
-                <div className='elite'>
-                    <button>
-                    <div><h5>ELITE</h5></div>
-                        <span></span><span></span><span></span><span></span><span></span>
-                    </button>
-                </div>
-                <div className='ludique'>
-                    <button>
-                        <div><h5>LUDIQUE</h5></div>
-                        <span></span><span></span><span></span><span></span><span></span>
-                    </button>
-                </div>
-            </div>
+        <div className='box1'>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={test}
+                    alt="SnowStorm Keyboard Sunset edition"
+                    />
+                    <Carousel.Caption>
+                    <h3>Sunset Edition</h3>
+                    <p>SnowStorm Sunset Edition les parfait opposés <br></br>
+                        choissisz bien votre camp ;)
+                    </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={phantom}
+                    alt="SnowStorm Keyboard razer collab edition"
+                    />
+
+                    <Carousel.Caption>
+                    <h3>Razer collab</h3>
+                    <p>Découvrez notre collab avec razer inédite !</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={Test_L80}
+                    alt="SnowStorm Keyboard christmas edition"
+                    />
+
+                    <Carousel.Caption>
+                    <h3><a href="#">Christmas edition</a></h3>
+                    <p>Edition limité ! <br></br> alors n'hésitez plus !</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </div>
-        <Contact/>
+        <div className='box2'>
+            
+        </div>
         </>
 }
 export default Home;

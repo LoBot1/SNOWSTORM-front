@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+footer{
+    padding: 80px 60px;
+    background: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer div.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div.footerTitle{
+    display: flex;
+}
+
+footer div.container div.footerTitle h1{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+footer div.footerTitle img{
+    width: 100px;
+    height: 100px;
+}
+
+footer div.copyright{
+    color: rgb(63, 63, 63);
+    font-size: xx-small;
+    text-align: right;
+}
+
+footer ul{
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer img.footerLogo {
+    background-color: #5684C1;
+    border-radius: 100%;
+}
+
+footer div.container h2{
+    color: white;
+}
+
+footer ul.contactFooter li img{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
