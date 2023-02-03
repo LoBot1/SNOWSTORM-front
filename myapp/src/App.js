@@ -63,9 +63,6 @@ function App(props){
                         case "/panelProductDelete":
                           components = <PanelAdminProductDelete/>
                           break
-                          case "/Footer":
-                          components = <Footer/>
-                          break
                         
 
         
@@ -86,7 +83,7 @@ function App(props){
       </div>,
       document.body
     );
-      
+      <Footer/>
     </>
 
   )

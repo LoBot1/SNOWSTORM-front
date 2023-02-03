@@ -1,6 +1,3 @@
-import Footer from '../components/footer/Footer.js';
-import NavBar from '../components/NavBar.js';
-import Contact from '../components/Support.js';
 import test from '../img/test.jpg';
 import Test_L80 from '../img/Test_L80.jpg';
 import phantom from '../img/phantom.jpg';
@@ -46,7 +43,7 @@ function Home() {
                     />
 
                     <Carousel.Caption>
-                    <h3><a href="#">Christmas edition</a></h3>
+                    <h3>Christmas edition</h3>
                     <p>Edition limité ! <br></br> alors n'hésitez plus !</p>
                     </Carousel.Caption>
                 </Carousel.Item>
